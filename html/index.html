@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planes</title>
+</head>
+<body> <!--Lo que ve el usuario-->
+
+    <main> <!--Caja que agrupa elementos-->
+        
+        <h1>Diferentes tipos de aviones</h1>
+        <!--img source es la ruta de la imagen, alt es la descripción de la imagen, puede ser desde la web o a través de manera local-->
+        <!--Imagen de la web-->
+        <img src="https://hips.hearstapps.com/hmg-prod/images/world-war-two-us-b-24-liberator-aircraft-of-the-93rd-bomb-news-photo-1669148727.jpg?crop=1.00xw:0.902xh;0,0&resize=1200:*" alt="Imagen de un avión B24">
+        <!--Imagen local-->
+        <img src="./img/mosquito.jpg" alt="Avión Mosquito">
+
+        <img src="./img/kamikaze.jpg" alt="Avión Kamikaze">
+
+        <!--Listas-->
+        <h3>Nombres de aviones</h3>
+
+        <!--Unordered list -->
+        <ul>
+            <li>Avión B24 (Americano)</li>
+            <li>Avión Mosquito (Americano)</li>
+            <li>Avión Kamikaze (Japonés)</li>
+        </ul>
+
+        <h3>Aviones de manera ordenada</h3>
+
+        <!--Ordered List-->
+        <ol>
+            <li>Avión B24 (Americano)</li>
+            <li>Avión Mosquito (Americano)</li>
+            <li>Avión Kamikaze (Japonés)</li>
+        </ol>
+
+        <div>
+
+            <!--Menu de navegación de la página web-->
+            <a href="#aviones">Aviones de diferentes países</a>
+            <a href="#ordenado">Lista de aviones ordenada</a>
+            <a href="#otroelemento">Otro elemento</a>
+            <a href="#unelemento">Un elemento más</a>
+
+        </div>
+
+        <br>
+        <br>
+
+        <!-- Secciones de texto -->
+        <h3 id="aviones">Aviones de diferentes países</h3>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+             Veniam inventore quasi tempora similique maiores? 
+             Voluptas placeat harum ipsam ducimus error repellendus 
+             praesentium ea a perferendis? Alias sint est totam optio.
+        </p>
+
+        <h3>Lista de aviones ordenada</h3>
+        <p id="ordenado">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Non consequuntur, eligendi explicabo dolorum voluptatum, 
+            enim incidunt molestiae error est in blanditiis qui quaerat dicta, 
+            dolore a nisi accusamus nemo! Fugit.
+        </p>
+
+        <h3 id="otroelemento">Otro elemento</h3>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Itaque nihil sunt quod molestias et dolores minima, 
+            tenetur voluptas beatae possimus ex hic? Nulla autem ipsum, 
+            reprehenderit iste ex sit eius.
+        </p>
+
+        <h3 id="unelemento">Un elemento más</h3>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+             Accusantium, tenetur blanditiis! Modi assumenda error mollitia dicta ad vitae harum provident, 
+             dolorem labore ipsum quod distinctio quos temporibus, 
+             ipsa neque eaque.
+        </p>
+
+        <br>
+
+        <!--Imagen dentro de un ancla-->
+        <p>Haz click en esta imagen para una sorpresa</p>
+        <a href="https://bongo.cat/">
+            <img src="./img/cat.jpg" alt="Airplane pilot cat">
+        </a>
+
+        <!--Formulario-->
+        <form>
+
+            <p>
+                ¿Nombre de un avión?
+            </p>
+
+            <!-- Etiqueta (identifica), en for hay que poner el identificador de la respuesta, a qué está asociado-->
+            <label for="dif-plane"> 
+
+                <input type="text">
+                <button>Enviar</button>
+            </label>
+
+            <!-- Formulario Input-->
+            <!-- Radio -- Para seleccionar una sola opción -->
+            <p>¿Pregunta?</p>
+            <!-- A cada respuesta se le pone un label, for es el identificador de la respuesta  -->
+            <label for="question">
+                <!-- Todos los labels que corresponden a este atributo llevan el mismo name, si no se pone name se pueden elegir más de una, porque no identifica que corresponde al mismo formulario -->
+                <input type="radio" name="respuestas"> Respuesta
+            </label> 
+            <label for="question2">
+                <input type="radio" name="respuestas"> Respuesta 2
+            </label>
+
+            <!-- For y el texto del label deben estar relacionados-->
+            <!-- Formulario  checkbox -->
+            <p>¿Pregunta 2?</p>
+            <!-- A cada respuesta se le pone un label, for es el identificador de la respuesta  -->
+            <label for="question3">
+                <!-- Todos los labels que corresponden a este atributo llevan el mismo name, si no se pone name se pueden elegir más de una, porque no identifica que corresponde al mismo formulario -->
+                <input type="checkbox" name="respuestas2"> Respuesta
+            </label> 
+            <label for="question4">
+                <input type="checkbox" name="respuestas2"> Respuesta 2
+            </label>
+            <!-- 1:02:35 -->
+
+
+        </form>
+    </main>
+
+
+</body>
+</html>

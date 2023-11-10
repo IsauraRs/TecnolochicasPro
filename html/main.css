@@ -1,0 +1,112 @@
+header nav.nav-right-section {
+    width: 250px;
+    height: auto;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav .nav-right-section a{
+    color: black;
+    margin-right: 20px; /*Agrega un márgen a los elementos
+    margin-top asigna un márgen a la parte de arriba
+    margin-right o left agrega un márgen a la derecha o izquierda del elemento*/
+
+}
+
+/* Ícono del menú  https://img.icons8.com/ios-glyphs/90/000000/circled-menu.png 
+background image -- permite poner una imagen de fondo*/
+
+nav .nav-right-section .menu{
+    background-image: url(https://img.icons8.com/ios-glyphs/90/000000/circled-menu.png); /* Puede o no llevar comillas */
+    /* Para que la imagen esté contenida en el elemento más grande */
+    background-size: contain; /* Hasta aquí podrían aparecer 2 íconos */
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat; /* Para que no se repita el ícono*/ 
+
+}
+
+/* Imagen del usuario */
+nav .nav-right-section img{
+    /* Redondeando bordes */
+    border-radius: 100%; 
+    /* Cambiando el tamaño de la imagen */
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
+}
+
+/* Main*/
+main {
+    /*Agregando un márgen / espacio entre header y main*/
+    margin-top: 200px;
+    /* Centrando los elementos*/
+    text-align: center;
+}
+
+/* La caja que contiene al logo */
+main .main-logo{
+    background-color: blue;
+    width: 530px;
+    /*Centrando absolutamente con los márgenes automáticos, el primer valor corresponde al márgen vertical y el segundo al márgen horizontal, en este caso 
+    automático, se ajusta al tamaño de la pantalla*/
+    margin: 0 auto;
+
+}
+
+main .main-logo img{
+    height: 90px;
+}
+
+main .main-input {
+    background-color: aquamarine;
+    width: 530px;
+    margin: 0 auto;
+
+}
+
+main .main-input-container {
+    background-color: aqua;
+    /* Ancho, estilo, color del borde */
+    border: 1px solid #dfe1e5;
+    width: 525px;
+}
+
+main .main-input input{
+    height: 35px;
+    /* quitando el borde del input */
+    border: none;
+}
+
+main .main-input .search-icon{
+    background-image: url(https://seekicon.com/free-icon-download/search_20.svg);
+    background-size: contain;
+    padding-left: 7%;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+main .main-input .micro-icon {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/);
+    background-size: contain;
+    padding-left: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+main .main-input .cam-icon {
+    background-image: url();
+    background-size: contain;
+    padding-right: 10%;
+    background-repeat: no-repeat;
+    margin-left: 10px;
+}
+
