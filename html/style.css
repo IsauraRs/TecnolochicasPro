@@ -1,0 +1,37 @@
+body {
+    background-color: rgba(230, 203, 127, 0.808);
+    color: #2b3c84;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    font-family: 'Archivo Narrow', sans-serif;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+h1 {
+    color: #2B8473;
+}
+
+h3 {
+    color: #842b3c;
+}
+
+a {
+    color: #98452d;
+}
+
+img {
+    width: 60%;
+}
+
+.PlaneB24 {
+
+    width: 1000px;
+    margin: 5px;
+}
+
+.aviator-cat {
+
+    width: 500px;
+    border-radius: 100%;
+    box-shadow: 1px 5px 5px #0d362f;
+}
+

@@ -81,7 +81,7 @@ Manejo de bases de datos
 Python, Php, Ruby
 MySQL
 
-##HTML
+## HTML
 HyperText Markup Language 
 
 Versión más reciente html 5
@@ -90,6 +90,12 @@ Es un lenguaje de etiquetas, no da funcionalidad
 1980 Berns del CERN
 
 Da estructura
+
+Si en VSCode se escribe html, se selecciona html:5, se obtiene el esqueleto, otra manera es escribir !, dar enter y se crea el esqueleto.
+
+Generalmente, las páginas web están estructuradas como body --> header --> main --> footer
+
+![skeleton]()
 
 Elemento 
 Componente báscico de un htmlSe utilizan elementos para definir la estructura
@@ -104,11 +110,30 @@ title aparece en la pestaña
 
 viewport es la escala de la pantalla que depende del dispositivo en el que se ve 
 
+
 <main></main> representa el contenido principal del documento o aplicación
+
 
 <img src="" alt=""> en src va el link de la imagen
 
 modelo responsivo --> debe funcionar en cualquier dispositivo
+
+iframe --> anuncios
+
+Los anuncios se pueden eliminar 
+
+###  Modificando una página web
+
+* Ir a la página --> Click derecho --> Inspeccionar
+
+o ir a los 3 puntitos de la página --> Herramientas de desarrollador
+
+* En la ventana _Elements_ 
+
+* Dar click en el símbolo de la flecha y el cuadrito con línea punteada para seleccionar elementos de la página
+
+* Modificar elementos a voluntad
+
 
 ## Listas
 
@@ -133,7 +158,7 @@ p  --> Párrafo
 Para hacer referencia en h3 o en p se pone id="" y entre comillas se pone el nombre que tiene el #, si se pone en p, te lleva a donde comienza el párrafo
 
 br --> break, para poner espacios
-
+ 
 Metiendo una imagen en un ancla 
 
 input --> permite que el usuario ingrese información
@@ -148,8 +173,89 @@ flexboxfroggy.com
 Leer instrucciones 
 mdn web docs --> para tipo wiki de html
 
+rel --> relación con el documento
+
+href --> dónde está el documento
 
 ## CSS
+Cascading Style Sheets
+
+CSS define las propiedades visuales de los elementos definidos por HRML -> diseño visual 
+
+Varios archivos HTML pueden usar el mismo CSS
+
+Se puede incorporar CSS al HTML de 3 maneras distintas:
+
+* En línea, se escribe código CSS como valor del atributo STYLE de un elemento HTML, el estilo sólo se aplicará a ese elemento: 
+
+``` HTML
+
+<elemento style=" "> </elemento>
+
+``` 
+* Embebido, se incrusta un elemento Style en algún lugar del HTML. Entre las etiquetas de apertura y cierre irá el código CSS El estilo solo se aplicará a los elementos de ese documento
+
+``` HTML
+<html>
+    <head>
+        <style> </style>
+    </head>
+    <body>
+        <h1>Hola Mundo </h1>
+    </body>
+</html>
+
+``` 
+
+* Externo, se definen los estilos en un archivo aparte y luego se enlaza al html que lo requiera.
+
+Regla --> determina el estilo que se aplicará a un elemento o grupo de elementos, formada por selector y bloque declarativo
+
+Selector --> indica a qué elemento se aplica una regla
+
+Bloque declarativo --> contiene 1 o más declaraciones.
+
+Declaración --> es un par propiedad valor separada por dos puntos y finaliza con punto y coma:
+
+``` CSS
+
+{
+    propiedad : valor;
+    propiedad : valor;
+    propiedad : valor;
+}
+
+``` 
+
+Propiedad --> indica la característica del elemento que se desea cambiar.
+
+Valor --> cómo se desea cambiar esa característica.
+
+background-color --> define el color de fondo de un elemento 
+
+color --> cambia el color del texto
+
+font-family --> cambia el tipo de letra
+
+border-radius --> para redondear los bordes de la imágen
+
+box-shadow --> para dar sombra al rededor del borde
+
+El color se puede poner en RGB o hexadecimal
+
+El clon de google se dividirá en:
+
+* Body
+* Header --> Contiene a la barra de navegación (navbar)
+* Main
+* Footer
+
+nav --> elemento para navegar 
+
+display flex --> habilita para que los elementos se muevan, sirve para usar todos los elementos que dicen flex
+
+
+ 
 
 Pasar de pixeles a porcentajes
 
@@ -157,5 +263,6 @@ section se utiliza de forma jerárquica antes de los divs, dentro de la sección
 
 div es para dividir es lo mismo que section, una caja que ayuda a poner elementos en orden, en la práctica se usa de manera diferente
 
+Para entrar a un elemento dentro de un elemento es elemento más externo elemento interno
 --> Tarea
 

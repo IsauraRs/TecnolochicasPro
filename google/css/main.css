@@ -1,0 +1,210 @@
+body {
+
+    margin: 0%;
+    padding: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+
+}
+
+/* ///////////////////////////////////////////////////////////////////////////// */
+/*                                      navbar                                   */
+/* ///////////////////////////////////////////////////////////////////////////// */
+
+
+header {
+
+    width: 100%;
+    height: 60px;
+}
+
+header nav {
+
+     display: flex;
+     justify-content: flex-end;
+}
+
+/* Entrando a un elmem */
+header nav .nav-right-section {
+    width: 500px;
+    height: auto;
+    list-style: none;
+    display: flex;
+    justify-content: right;
+    align-items: center; /*Para centrar verticalmente*/
+    /* margin-right: 0%; */
+}
+
+a {
+    text-decoration: none; /*Para eliminar la línea debajo del texto*/
+}
+
+/*Editando las anclas de al lado de la imágen de perfil*/
+nav .nav-right-section a{
+    color: black;
+    margin-right: 20px;
+}
+
+NAV .nav-right-section .menu {
+    /*Agregando íconos*/
+    background-image: url(https://img.icons8.com/ios-glyphs/90/00000/circled-menu.png);
+    /*Para que la imagen esté contenida en el elemento más grande*/
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+}
+
+nav .nav-right-section img {
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
+    margin-right: 0%;
+}
+
+/* ///////////////////////////////////////////////////////////////////////////// */
+/*                                 main                                          */
+/* ///////////////////////////////////////////////////////////////////////////// */
+
+main {
+    /*Agregando un márgen / espacio entre header y main*/
+    margin-top: 100px;
+    /* Centrando los elementos*/
+    text-align: center;
+}
+
+/* La caja que contiene al logo */
+main .main-logo{
+    width: 530px;
+    /*Centrando absolutamente con los márgenes automáticos, el primer valor corresponde al márgen vertical y el segundo al márgen horizontal, en este caso 
+    automático, se ajusta al tamaño de la pantalla*/
+    margin: 0 auto;
+
+}
+
+main .main-logo img{
+    height: 92px;
+    margin-bottom: 3%;
+}
+
+main .main-input {
+    /* background-color: aquamarine; */
+    width: 530px;
+    margin: 0 auto;
+
+}
+
+main .main-input-container {
+    /* background-color: aqua; */
+    /* Ancho, estilo, color del borde */
+    border: 1px solid #dfe1e5;
+    border-radius: 20px;
+    width: 525px;
+    margin-bottom: 8%;
+    padding: 0 auto;
+}
+
+main .main-input input{
+    height: 35px;
+    /* quitando el borde del input */
+    border: none;
+    /* quitando el borde que aparece en el input cuando está activo*/
+    outline: none;
+    width: 350px;
+    
+}
+
+main .main-input .search-icon{
+    background-image: url(https://seekicon.com/free-icon-download/search_20.svg);
+    background-size: contain;
+    padding-left: 7%;
+    background-repeat: no-repeat;
+    width: 1%;
+    height: 2%;
+    margin-right: 10px;
+    margin-left: 20px;
+}
+
+main .main-input .micro-icon {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/726px-Google_mic.svg.png);
+    background-size: contain;
+    padding-left: 4%;
+    background-repeat: no-repeat;
+    width: 60px;
+}
+
+main .main-input .cam-icon {
+    background-image: url(https://static.wikia.nocookie.net/logopedia/images/2/2b/Google_Lens_2021.svg);
+    background-size: contain;
+    padding-right: 5%;
+    background-repeat: no-repeat;
+    margin-left: 10px;
+    margin-right: 0%;
+    width: 40px;
+}
+
+main .buttons {
+    width: 550px;
+    margin: 0 auto;
+}
+
+main .buttons div{
+    display: inline-block;
+}
+
+main .buttons button{
+    background-color: #f8f9fa;
+    border: none;
+    height: 40px;
+    font-size: 16px;
+    padding: 0px 15px;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+main .main-input-container:hover{
+    box-shadow: 0 0 5px #20212447;
+}
+
+main .buttons button:hover{
+    color:#20212447;
+    border: 1px solid #dadce0;
+    box-shadow: 0 1px 1px #20212447;
+}
+
+footer .left-footer {
+    color: black;
+    margin-left: 2%;
+    margin-top: 25%;
+}
+
+
+footer .left-footer {
+    display: inline-block;
+}
+
+footer .left-footer a{
+    margin: 12px;
+    color: black;
+}
+
+
+footer .right-footer {
+
+    color: black;
+    margin-right: 5px;
+    /* justify-self: right; */
+    margin-left: 40%;
+    /* margin-top: 10%;  */
+    
+}
+
+footer .right-footer {
+    display: inline-block;
+}
+
+footer .right-footer a{
+    margin: 12px;
+    color: black;
+}

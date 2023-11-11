@@ -3,16 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Nombre que aparece en la pestaña del navegador -->
     <title>Planes</title>
+    <!-- Conexión con el CSS -->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Montserrat+Alternates:wght@300&display=swap" rel="stylesheet">
 </head>
 <body> <!--Lo que ve el usuario-->
 
-    <main> <!--Caja que agrupa elementos-->
+    <main> <!--Caja que agrupa elementos, contenido principal del body-->
         
         <h1>Diferentes tipos de aviones</h1>
+
+        <!-- Menu de navegación -->
+        <div>
+            <a href="#Avion1">Tipo de avión 1</a>
+            <br />
+            <a href="#Avion2">Tipo de avión 2</a>
+            <br />
+            <a href="#Avion3">Tipo de avión 3</a>
+        </div>
+        <br />
+        <br />
+
         <!--img source es la ruta de la imagen, alt es la descripción de la imagen, puede ser desde la web o a través de manera local-->
         <!--Imagen de la web-->
-        <img src="https://hips.hearstapps.com/hmg-prod/images/world-war-two-us-b-24-liberator-aircraft-of-the-93rd-bomb-news-photo-1669148727.jpg?crop=1.00xw:0.902xh;0,0&resize=1200:*" alt="Imagen de un avión B24">
+        <img class="PlaneB24" src="https://hips.hearstapps.com/hmg-prod/images/world-war-two-us-b-24-liberator-aircraft-of-the-93rd-bomb-news-photo-1669148727.jpg?crop=1.00xw:0.902xh;0,0&resize=1200:*" alt="Imagen de un avión B24">
         <!--Imagen local-->
         <img src="./img/mosquito.jpg" alt="Avión Mosquito">
 
@@ -88,7 +106,7 @@
         <!--Imagen dentro de un ancla-->
         <p>Haz click en esta imagen para una sorpresa</p>
         <a href="https://bongo.cat/">
-            <img src="./img/cat.jpg" alt="Airplane pilot cat">
+            <img class="aviator-cat" src="./img/cat.jpg" alt="Airplane pilot cat">
         </a>
 
         <!--Formulario-->
@@ -102,7 +120,7 @@
             <label for="dif-plane"> 
 
                 <input type="text">
-                <button>Enviar</button>
+                <button class="sendButton">Enviar</button>
             </label>
 
             <!-- Formulario Input-->
@@ -127,6 +145,9 @@
             </label> 
             <label for="question4">
                 <input type="checkbox" name="respuestas2"> Respuesta 2
+            </label>
+            <label for="question5">
+                <input type="checkbox" name="respuestas2"> Respuesta 3
             </label>
             <!-- 1:02:35 -->
 
